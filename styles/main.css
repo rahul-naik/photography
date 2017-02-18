@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+.flex-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.layout-column{
+    flex-direction: column;
+}
+.layout-center-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-stretch-spacebetween{
+    justify-content: space-between;
+}
+.layout-center-end{
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.layout-center-start{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.layout-center-spaceAround{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.layout-center-spaceBetween{
+    align-items: center;
+    justify-content: space-between;
+}
+
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+   
+}
+body{padding-top:113px;font-family: 'Roboto';}
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+/*.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}*/
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(104, 145, 162);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(12, 97, 33);
+}
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
+
+
+#login { display: none; }
+.login,
+.logout { 
+    position: absolute; 
+    top: -3px;
+    right: 0;
+}
+
+.tab-content {
+    padding: 50px 15px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.custom-input-file:hover .uploadPhoto { display: block; }
+/* Responsive: Portrait tablets and up */
+
+
+.drop{
+  display: flex;
+  height:200px;
+  width:20%;
+ border:1px dashed #ccc;
+ margin:0 23px;
+align-items: center;
+        cursor: pointer;
+}
+.drop span{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding:20px;
+}
+
+nav {height:100px;background: #35b0d4;}
+.navbar-nav > li {
+    margin: 0 0 0 3px;
+}
+.navbar-nav{padding-top:35px;}
+.navbar-nav>li>a {
+    padding: 5px 11px;
+    font-size: 18px;
+}
+.navbar-nav>li>a{display:block; text-transform:uppercase; color:#FFF; font-size:18px;}
+.navbar-nav>li>a:focus, .navbar-nav>li>a:hover{color:#FFF;background:transparent !important;}
+.admin-text{
+      display: inline-block;
+    color: #FFF;
+    font-size: 20px;
+    padding-top: 30px;
+    font-weight: 300;
+}
+.flex{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+.action-buttons a{
+   margin-right:30px
+}
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.table>tbody>tr>td{
+  vertical-align: middle;
+}
+.gray-out span{
+  color:#CCC;
+}
+.album-img {margin-left:20px;}
+.album-img > div{ margin:10px 0;}
+
+.topMargin {
+    margin-top: 30px;
+}
+
+.custom-card{
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+        padding:16px;
+        width: 350px;
+}
